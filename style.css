@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Couleur de fond */
+}
+
+.entete {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+}
+
+.entete span {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 100px auto; /* Centrage vertical et horizontal */
+    padding: 30px;
+    background-color:MediumAquaMarine;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333; /* Couleur du texte */
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container a {
+    color: #007bff; /* Couleur du lien */
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Couleur du lien au survol */
+}
+.contenant {
+    width: 100%;
+    max-width: 600px; /* Ajustement de la largeur maximale */
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:MediumAquaMarine;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenant h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contenant label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contenant input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contenant button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contenant button:hover {
+    background-color: #0056b3;
+}
+
+.contenant a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contenant a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.contenant b {
+    font-weight: bold;
+}
+nav.menu{
+    width: 100%;
+    margin-bottom: 5vh;
+    position: relative;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+
+    position: relative;
+}
+.menu > ul{
+    justify-content: center;
+}
+.menu > ul a{
+    border-radius: 6px;
+    position: relative;
+
+}
+.menu > ul > li:hover .top-sous-menu {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+
+.menu > ul > li > a{
+    z-index: 2;
+} 
+
+.menu a{
+    padding: 7px 15px;
+    text-decoration: none;
+    background-color:MediumAquaMarine;
+    color: white;
+    margin-right: 5px;
+}
+
+.menu a:hover{
+    color: NavajoWhite;
+}
+
+.menu .sous-menu{
+    flex-direction: column;
+    position: absolute;
+    background-color: hsl(161, 56%, 84%);;
+    padding: 20px;
+    top: 28px;
+    display: none;
+
+    box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.menu > ul > li:hover > a + .sous-menu, .sous-menu:hover{
+    display: flex;
+}
+
+.sous-menu a{
+    background-color: transparent;
+    display: block;
+
+    border-top-left-radius: 0px;
+}
+
+.reponses {
+    text-align: center;
+}
+
+.resultats-details {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color:MediumAquaMarine;
+    width: 50%;
+    margin: auto;
+    
+    /* display: inline-block; */
+}
+
+.resultats-details h1 {
+    margin-bottom: 5px;
+}
+
+.resultats-details p {
+    margin: 5px 0;
+}
+
+.bon {
+    border: 1px solid #4caf50;
+    color:green; /* Couleur pour la note totale */
+    font-weight: bold;
+    background-color: black;
+}
+.mauvais  {
+    border: 1px solid #4caf50;
+    background-color: black;
+    color:red; /* Couleur pour la note totale */
+    font-weight: bold;
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    
+}
+.bonne-reponse {
+    color: #4caf50; /* Couleur pour la bonne réponse */
+}
+
+.mauvaise-reponse {
+    color: #f44336; /* Couleur pour la mauvaise réponse */
+}
+
+.form {
+    max-width: 600px; /* Ajustement de la largeur maximale */
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form input[type="text"],
+.form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.container2 {
+    color: white;
+    width: 40%;
+    margin: auto;
+    margin-top: 20vh; /* Modifié pour centrer verticalement */
+    background-color: black;
+    padding: 20px; /* Augmenté pour plus d'espace intérieur */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container2 form {
+    margin-top: 20px;
+}
+
+.container2 label {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.container2 input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.container2 input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Effet de transition ajouté */
+}
+
+.container2 input[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur de survol modifiée */
+}
+
+.history-container {
+    width:100%; /* Largeur du conteneur */
+    margin: 50px auto; /* Centrage vertical et horizontal */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.history-item {
+    margin-bottom: 20px; /* Espacement entre les éléments */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.history-item p {
+    margin: 5px 0; /* Espacement entre les paragraphes */
+}
+
+.history-item span {
+    font-weight: bold; /* Texte en gras */
+    color: #007bff; /* Couleur du texte */
+}
+
+.history-empty {
+    text-align: center; /* Centrer le texte */
+    margin-top: 50px; /* Espacement depuis le haut */
+}
+.login-container1 {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color:MediumAquaMarine;
+
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container1 .form-group {
+    margin-bottom: 20px;
+}
+
+.login-container1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Couleur pour les labels */
+}
+
+.login-container1 input[type="text"],
+.login-container1 input[type="email"],
+.login-container1 input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333; /* Couleur pour les textes des inputs */
+}
+
+.login-container1 input[type="text"]:hover,
+.login-container1 input[type="email"]:hover,
+.login-container1 input[type="password"]:hover {
+    border-color: #007bff; /* Couleur pour le hover */
+}
+
+.login-container1 button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container1 button:hover {
+    background-color: #0056b3; /* Couleur pour le hover */
+}
+
+.login-container1 p {
+    text-align: center;
+    margin-top: 15px;
+    color: #666; /* Couleur pour le texte des liens */
+}
+
+.login-container1 a {
+    color: #007bff; /* Couleur pour les liens */
+}
+
+.login-container1 a:hover {
+    text-decoration: underline;
+}
